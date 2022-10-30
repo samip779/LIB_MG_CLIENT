@@ -17,7 +17,10 @@ const Login: React.FC = () => {
 
       <button className='btn btn-primary  min-w-full mx-auto'>Login</button>
 
-      <a href='#' className='text-center text-sm text-gray-200 mt-5'>
+      <a
+        href='#'
+        className='text-center text-sm text-gray-300 mt-5 hover:text-gray-50'
+      >
         Forgot Password?
       </a>
     </form>
