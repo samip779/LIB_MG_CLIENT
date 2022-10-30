@@ -5,7 +5,11 @@ const SignUp = () => {
   return (
     <form className='form-control'>
       {signUpFields.map((field) => (
-        <Input key={field.id} placeholder={field.placeholder} />
+        <Input
+          key={field.id}
+          placeholder={field.placeholder}
+          type={field.type}
+        />
       ))}
 
       <button className='btn btn-primary min-w-full mx-auto'>Sign Up</button>

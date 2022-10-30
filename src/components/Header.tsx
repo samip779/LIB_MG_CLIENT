@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 
 type Props = {
   heading: string;
@@ -24,12 +25,12 @@ const Header: React.FC<Props> = ({
       </h2>
       <p className='text-center text-sm text-gray-200 mt-5'>
         {paragraph}{' '}
-        <a
-          href={linkUrl}
+        <Link
+          to={linkUrl}
           className='font-medium text-red-500 hover:text-red-400'
         >
           {linkName}
-        </a>
+        </Link>
       </p>
     </div>
   );

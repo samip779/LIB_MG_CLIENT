@@ -13,22 +13,27 @@ const signUpFields = [
   {
     placeholder: 'First Name',
     id: 'first-name',
+    type: 'string',
   },
   {
     placeholder: 'Last Name',
     id: 'last-name',
+    type: 'string',
   },
   {
     placeholder: 'Email Address',
     id: 'email-address',
+    type: 'email',
   },
   {
     placeholder: 'Password',
     id: 'password',
+    type: 'password',
   },
   {
     placeholder: 'Confirm Password',
     id: 'confirm-password',
+    type: 'password',
   },
 ];
 

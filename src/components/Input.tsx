@@ -2,11 +2,12 @@ import React from 'react';
 
 interface Props {
   placeholder: string;
+  type: string;
 }
-const Input: React.FC<Props> = ({ placeholder }) => {
+const Input: React.FC<Props> = ({ placeholder, type }) => {
   return (
     <input
-      type='text'
+      type={type}
       placeholder={placeholder}
       className='input w-full mx-auto mb-5'
     />

@@ -8,7 +8,11 @@ const Login: React.FC = () => {
   return (
     <form className='form-control'>
       {loginFields.map((field) => (
-        <Input key={field.id} placeholder={field.placeholder} />
+        <Input
+          key={field.id}
+          placeholder={field.placeholder}
+          type={field.type}
+        />
       ))}
 
       <button className='btn btn-primary  min-w-full mx-auto'>Login</button>
