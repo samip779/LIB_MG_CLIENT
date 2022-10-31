@@ -2,8 +2,6 @@ import React from 'react';
 import Input from './Input';
 import { loginFields } from '../constants/formFields';
 
-// let fields = loginFields;
-
 const Login: React.FC = () => {
   return (
     <form className='form-control'>

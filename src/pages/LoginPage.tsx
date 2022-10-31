@@ -12,7 +12,6 @@ const LoginPage = () => {
             linkName='Sign Up'
             linkUrl='/signUp'
           />
-
           <Login />
         </div>
       </div>
