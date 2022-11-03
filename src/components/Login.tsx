@@ -1,10 +1,9 @@
-import React from 'react';
 import Input from './Input';
 import { loginFields } from '../constants/formFields';
 
 const Login: React.FC = () => {
   return (
-    <form className='form-control'>
+    <form className='form-control' onSubmit={(e) => e.preventDefault()}>
       {loginFields.map((field) => (
         <Input
           key={field.id}
@@ -13,7 +12,9 @@ const Login: React.FC = () => {
         />
       ))}
 
-      <button className='btn btn-primary  min-w-full mx-auto'>Login</button>
+      <button type='submit' className='btn btn-primary  min-w-full mx-auto'>
+        Login
+      </button>
 
       <a
         href='#'
