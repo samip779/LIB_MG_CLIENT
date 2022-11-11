@@ -5,7 +5,15 @@ module.exports = {
 
   plugins: [require("daisyui")],
 
+  theme: {
+    extend: {
+      colors: {
+        // 'button-blue': '#539a4d'
+      }
+    }
+  },
+
   daisyui: {
-    themes: true,
+    themes: false,
   }
 }

@@ -1,6 +1,6 @@
 import Input from './Input';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { loginFields } from '../constants/formFields';
 
 type LoginData = {
@@ -18,8 +18,14 @@ const Login: React.FC = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(data);
+  };
+
   return (
-    <form className='form-control'>
+    <form className='form-control' onSubmit={handleSubmit}>
       {loginFields.map((field) => (
         <Input
           key={field.id}
@@ -31,13 +37,13 @@ const Login: React.FC = () => {
         />
       ))}
 
-      <button type='submit' className='btn btn-primary  min-w-full mx-auto'>
+      <button type='submit' className='btn btn-primary min-w-full mx-auto'>
         Login
       </button>
 
       <a
         href='#'
-        className='text-center text-sm text-gray-300 mt-5 hover:text-gray-50'
+        className='text-center text-sm text-button-blue mt-5 hover:text-blue-300'
       >
         Forgot Password?
       </a>

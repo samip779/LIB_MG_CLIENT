@@ -18,16 +18,16 @@ const Header: React.FC<Props> = ({
   return (
     <div className='mb-10'>
       <div className='flex justify-center'>
-        <img alt='Library Management' className='h-14 w-14' src={logo} />
+        <img alt='Library Management' className='h-30 w-100' src={logo} />
       </div>
-      <h2 className='mt-6 text-center text-3xl font-bold text-violet-50	'>
+      <h2 className='mt-6 text-center text-3xl font-bold text-button-blue'>
         {heading}
       </h2>
-      <p className='text-center text-sm text-gray-200 mt-5'>
-        {paragraph}{' '}
+      <p className='text-center text-sm text-button-blue mt-5'>
+        {paragraph}
         <Link
           to={linkUrl}
-          className='font-medium text-red-500 hover:text-red-400'
+          className='font-medium text-blue-600 hover:text-blue-400'
         >
           {linkName}
         </Link>
